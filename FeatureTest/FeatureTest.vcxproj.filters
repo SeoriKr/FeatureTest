@@ -5,5 +5,9 @@
     <ClCompile Include="Delegate.cpp" />
     <ClCompile Include="VariadicArgument.cpp" />
     <ClCompile Include="Tokenizer.cpp" />
+    <ClCompile Include="FMatrix.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Structs.h" />
   </ItemGroup>
 </Project>

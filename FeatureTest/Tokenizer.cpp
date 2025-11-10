@@ -1,45 +1,4 @@
-#include <iostream>
-#include <fstream>
-#include <sstream>
-#include "string"
-#include "vector"
-#include "map"
-
-using namespace std;
-
-struct FVector
-{
-	float x;
-	float y;
-	float z;
-};
-
-struct FVector2
-{
-	float u;
-	float v;
-};
-
-struct Vertex
-{
-	FVector Location;
-	FVector2 TexCoord;
-	FVector Normal;
-};
-
-struct FStaticMesh
-{
-	vector<FVector> Locations;
-	vector<FVector2> TexCoords;
-	vector<FVector> Normals;
-	vector<vector<FVector>> Faces;
-};
-
-struct UStaticMesh
-{
-	vector<Vertex> Vertices;
-	vector<int> Indices;
-};
+#include "Structs.h"
 
 void ParseOBJ(const string& filename, FStaticMesh& OutFStaticMesh);
 FVector ParseFaceVertex(const string& VertexData);
